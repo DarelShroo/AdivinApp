@@ -19,8 +19,7 @@ public class AdivinApp extends Application {
     private TextField textoNumeros;
     private VBox rootPanel;
 
-    public static void main(String[] args) {
-        launch(args);
+    public AdivinApp() {
     }
 
     public void start(Stage primaryStage) throws Exception {
@@ -80,4 +79,53 @@ public class AdivinApp extends Application {
         }
 
     }
+
+    public int getNUMEROSECRETO() {
+        return NUMEROSECRETO;
+    }
+
+    public int getIntentos() {
+        return intentos;
+    }
+
+    public void setIntentos(int intentos) {
+        this.intentos = intentos;
+    }
+
+    public Label getAciertoLabel() {
+        return aciertoLabel;
+    }
+
+    public void setAciertoLabel(Label aciertoLabel) {
+        this.aciertoLabel = aciertoLabel;
+    }
+
+    public Button getComprobarButton() {
+        return comprobarButton;
+    }
+
+    public void setComprobarButton(Button comprobarButton) {
+        this.comprobarButton = comprobarButton;
+    }
+
+    public TextField getTextoNumeros() {
+        return textoNumeros;
+    }
+
+    public void setTextoNumeros(TextField textoNumeros) {
+        this.textoNumeros = textoNumeros;
+    }
+
+    public VBox getRootPanel() {
+        return rootPanel;
+    }
+
+    public void setRootPanel(VBox rootPanel) {
+        this.rootPanel = rootPanel;
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
 }
